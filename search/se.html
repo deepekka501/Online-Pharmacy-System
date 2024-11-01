@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Bar with Toggle Options</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<div class="container mt-3">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <!-- Toggle button to show/hide options -->
+      <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#optionsCollapse" aria-expanded="false" aria-controls="optionsCollapse">Toggle Options</button>
+    </div>
+    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button">Search</button>
+    </div>
+  </div>
+
+  <!-- Options section -->
+  <div class="collapse" id="optionsCollapse">
+    <div class="card card-body">
+      <!-- Add your options here -->
+      <a href="#" class="btn btn-light">Option 1</a>
+      <a href="#" class="btn btn-light">Option 2</a>
+      <a href="#" class="btn btn-light">Option 3</a>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (Optional, only required for collapse functionality) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

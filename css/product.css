@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Set hero section height to 50% of the viewport height */
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Added position relative for absolute positioning */
+    color:white;
+    text-shadow: 2px 2px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.search-bar {
+    text-align: center; /* Center the search bar */
+    margin: 20px;
+}
+
+.search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin-top: 1em; /* Added margin-top for spacing */
+    cursor: pointer;
+}
+
+section {
+    padding:  2em 0;
+    text-align: center;
+
+}
+
+h2 {
+    color: #333;
+}
+
+.product-container,
+.trending-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks in container */
+}
+
+.product-card{
+  display: inline-block;
+    width: 150px; /* Set card width */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    /* background-color: #fff; */
+    transition: transform 0.3s; /* Add transition for a smooth effect */
+}
+.trending-card {
+    display: inline-block;
+    width: 250px; /* Set card width */
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    transition: transform 0.3s; /* Add transition for a smooth effect */
+}
+
+
+.trending-card img{
+    height:180px;
+}
+.trending-card h3{
+    font-size: 20px;
+}
+.trending-card p{
+    font-size: 15px;
+    margin: 0px
+}
+
+.product-card h3{
+  font-size: 15px;
+}
+
+.product-card img:hover,
+.trending-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .product-container,
+    .trending-container {
+        overflow-x: hidden; /* Disable horizontal scrolling on mobile */
+        white-space: normal; /* Allow line breaks */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .product-card,
+    .trending-card {
+        width: 90%; /* Set card width to 90% for better mobile display */
+        margin: 1em auto; /* Center the card horizontally */
+    }
+}
